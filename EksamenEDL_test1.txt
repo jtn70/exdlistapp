@@ -1,0 +1,266 @@
+#Listen er for test gjennom samarbeid frem mot og etter seminar 23.januar 2018
+#Krever application: web-browsing, ssl, flash, vimeo-base, google-analytics
+#Evt feil og mangler er ikke sfj.no sitt ansvar
+#Kontakt petter.stenstadvold@sfj.no for oppdateringer
+#
+#Justert 11.mai 2018 etter gjennomgang i sfj.no
+#Ikke alle ressurser er fult ut sjekket. Kom gjerne med innspill
+
+
+#pgs
+pgsc.udir.no
+pgsd.udir.no
+pgsf.udir.no
+pas.udir.no
+pgsa.udir.no
+eksamen.udir.no
+id.udir.no
+idporten.difi.no
+
+#Feide
+idp.feide.no
+innsyn.feide.no
+
+
+#### Felles ######
+
+#Allkunne  (+googleting) 30/4
+*.allkunne.no
+allkunne.no
+
+#Bioteknologiradet     30/4
+*.bioteknologiradet.no
+bioteknologiradet.no
+
+#Bronnoysundregisteret 1/5
+www.brreg.no
+scf.brreg.no
+brreg.no
+fonts.googleapis.com
+ajax.googleapis.com
+maxcdn.bootstrapcdn.com
+www.google-analytics.com
+script.hotjar.com
+static.hotjar.com
+fonts.gstatic.com
+
+#FN - Globalis  30/4
+www.fn.no
+fn.no
+
+#LEXIN- ordboker 1/5
+lexin.udir.no
+
+#Lovdata        30/4
+eksamen.lovdata.no
+
+#NDLA - digitale nettressurser
+ndla.no
+#cdn-a.ndlap3.seria.net  (erstattet 1/5)
+#cdn-b.ndlap3.seria.net  (erstattet 1/5)
+#cdn-c.ndlap3.seria.net  (erstattet 1/5)
+cdn-a.ndla.no
+cdn-b.ndla.no
+cdn-c.ndla.no
+
+auth.ndla.no
+search.ndla.no
+sti.ndla.no
+stream.ndla.no
+static.ndla.no
+
+fonts.googleapis.com
+cdn.mathjax.org
+ndla.tns-cs.net
+js-agent.newrelic.com
+app-eu.readspeaker.com
+api.istribute.com
+seriastaticcdn.net
+streaming.cerpus.net
+streaming-static.cerpus.net
+p.jwpcdn.com
+player.vimeo.com
+
+#Norges bank     1/5 minus filmer
+www.norges-bank.no
+norges-bank.no
+static.norges-bank.no
+
+#Norsksidene   (ny url norsknettskole.no pga bilder og ovinger) 1/5
+www.norsksidene.no/web
+norsksidene.no/web
+norsknettskole.no
+
+#Norsk utenrikspolitisk institutt  1/5
+www.nupi.no
+nupi.no
+
+#Psykologi tidsskrift   1/5
+www.psykologtidsskriftet.no
+psykologtidsskriftet.no
+
+#Regjeringen       10/4
+www.regjeringen.no
+regjeringen.no
+
+#Ressurser for bl.a. HTML og Javascript   1/5
+www.w3schools.com
+w3schools.com
+
+#Spraakraadets ordboker   1/5
+www.sprakradet.no
+sprakradet.no
+
+#Store norske leksikon   1/5
+www.snl.no
+snl.no
+
+#Skriveverktoy  (minus video)   1/5
+writing-tool.app.fagbokforlaget.no
+skriveverktoy.app.fagbokforlaget.no
+
+#Statistisk sentralbyra   1/5
+www.ssb.no
+ssb.no
+
+#Stortinget    1/5
+www.stortinget.no
+stortinget.no
+
+###  Samiske og finske ressurser ### (ikke kontrollert)
+#Ordbok - Sorsamisk
+baakoeh.oahpa.no
+#Leringsstier -Sorsamisk
+kuvsje.oahpa.no
+#Nordsamisk ordbok
+sanit.oahpa.no
+#Finsk ordbok
+www.kielitoimistonsanakirja.fi
+kielitoimistonsanakirja.fi
+ilmainensanakirja.fi
+www.sanakirja.org
+sanakirja.org
+
+
+### Yrkesfag ###
+##Elektro
+#BaneNors nettsider    1/5
+www.banenor.no
+banenor.no
+
+##Helse og oppvekst
+#Helsedirektoratet     1/5
+www.helsedirektoratet.no
+helsedirektoratet.no
+
+#Norsk helseinformatikk    1/5
+www.nhi.no
+nhi.no
+
+#Felleskatalogen             1/5
+www.felleskatalogen.no
+felleskatalogen.no
+
+##Teknikk og industriell produksjon
+#Sjofartsdirektoratet  (ny URL sdir.no)  1/5
+www.sjofartsdir.no
+sjofartsdir.no
+www.sdir.no
+sdir.no
+
+### Studieforberedende utdanningsprogram ###
+##Musikk dans drama
+#Nasjonalbiblioteket           1/5
+www.nb.no
+nb.no
+nbdcms.nb.no
+#cdnjs.cloudflare.com
+#fonts.gstatic.com
+#stats.g.doubleclick.net
+
+##Medier og kommunikasjon
+#Norsk presseforbund           1/5
+www.presse.no
+presse.no
+
+
+### Tegnspraak  ###       (ikke kontrollert i 2018)
+158.36.153.137/eksamen/
+#www.osloprover.no
+#osloprover.no
+
+
+####Sogn og Fjordane egne ressurser###
+
+# ordbok UIB                  1/5
+ordbok.uib.no
+
+#lokus.no m/Lingua Planet og andre boker         1/5
+lokus.no
+*.lokus.no
+
+
+#Fagbokforlaget Dalefag     (testet for, og litt 1/5)
+www.dalefag.no
+portfolio.no
+booksync.fagbokforlaget.no
+dpm.fagbokforlaget.no
+dict.fagbokforlaget.no
+booksearch.fagbokforlaget.no
+reader.dbok.no
+id.eportal.fagbokforlaget.no
+eportal.fagbokforlaget.no
+auth.eportal.fagbokforlaget.no
+auth-nav.fagbokforlaget.no
+signaturbm.portfolio.no
+dbok.portfolio.no
+booksync2.fagbokforlaget.no
+
+#Ordnett                    (testet for, litt 1/5)
+www.ordnett.no
+ordnett.no
+data.ordnett.no
+tibet.ordnett.no
+tibet.boklink.no
+
+#Clarify                            1/5
+www.clarifylanguage.com
+clarifylanguage.com
+clarify-mobile-1.azure-mobile.net
+
+
+#Smartbok for ungdomsskole
+tibet.gyldendal.no
+api.gyldendal.no
+smartbook-gyldendal-no.s3.amazonaws.com
+bok.smartbok.no
+
+### Utskifter via safecom ###
+#utskrift                 1/5
+sfj.no/utskrift
+sfj.no/ep
+www.sfj.no/utskrift
+www.sfj.no/ep
+10.100.96.37
+10.4.0.192
+hvgs.no/ep
+hvgs.no/utskrift
+www.hvgs.no/ep
+www.hvgs.no/utskrift
+
+
+###  Ymse systemting ###
+#Lisens office365 lokal inst
+ols.officeapps.live.com
+
+#login pa Office-produkt
+accounts.accesscontrol.windows.net
+secure.aadcdn.microsoftonline-p.com
+
+#Google analyser
+www.google-analytics.com
+google-analytics.com
+
+#grafisk
+w3.sfj.no/tilgang/sffklogo.gif
+

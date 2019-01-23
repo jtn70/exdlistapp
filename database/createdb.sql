@@ -27,7 +27,7 @@ CREATE TABLE application
 (
   application_id int unsigned NOT NULL AUTO_INCREMENT,
   name VARCHAR (255) character set latin1,
-  comment VARCHAR (255 character set latin1),
+  comment VARCHAR (255) character set latin1,
   PRIMARY KEY (application_id)
 );
 

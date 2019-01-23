@@ -5,12 +5,12 @@ CREATE DATABASE IF NOT EXISTS paxdlistapp
 CHARACTER SET = 'latin1';
 USE paxdlistapp;
 
-DROP TABLE settings;
+DROP TABLE IF EXIST settings;
 CREATE TABLE settings (
   dbversion CHAR (5)
 );
 
-DROP TABLE user;
+DROP TABLE IF EXIST user;
 CREATE TABLE user
 (
   user_id int unsigned NOT NULL AUTO_INCREMENT,
@@ -22,7 +22,7 @@ CREATE TABLE user
   PRIMARY KEY (user_id)
 );
 
-DROP TABLE application;
+DROP TABLE IF EXIST application;
 CREATE TABLE application
 (
   application_id int unsigned NOT NULL AUTO_INCREMENT,
@@ -31,7 +31,7 @@ CREATE TABLE application
   PRIMARY KEY (application_id)
 );
 
-DROP TABLE site;
+DROP TABLE IF EXIST site;
 CREATE TABLE site
 (
   site_id int unsigned NOT NULL AUTO_INCREMENT,

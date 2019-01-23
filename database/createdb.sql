@@ -7,8 +7,8 @@ USE paxdlistapp;
 
 CREATE TABLE IF NOT EXISTS settings
 (
-  version CHAR(5)
-) engine=InnoDB;
+  version CHAR (5)
+);
 
 CREATE TABLE IF NOT EXISTS users
 (
@@ -18,14 +18,14 @@ CREATE TABLE IF NOT EXISTS users
   password BLOB,
   affiliation VARCHAR (255),
   superuser boolean,
-) engine=InnoDB;
+);
 
 CREATE TABLE IF NOT EXISTS application
 (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR (255),
   comment VARCHAR (255)
-) engine=InnoDB;
+);
 
 CREATE TABLE IF NOT EXISTS site
 (
@@ -33,4 +33,4 @@ CREATE TABLE IF NOT EXISTS site
   site VARCHAR (255),
   comment VARCHAR (255),
   appid INT FOREIGN KEY
-) engine=InnoDB;
+);

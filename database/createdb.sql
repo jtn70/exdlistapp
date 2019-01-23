@@ -1,36 +1,42 @@
-# insert into users (email, name, password, affiliation) values ('test@test.com', 'test testesen', AES_ENCRYPT('pass123', 'secret'), ..)
+-- WARNING!: This script WILL DELETE and recreate all tables
+-- insert into users (email, name, password, affiliation) values ('test@test.com', 'test testesen', AES_ENCRYPT('pass123', 'secret'), ..)
 
 CREATE DATABASE IF NOT EXISTS paxdlistapp
-CHARACTER SET = 'utf8';
-
+CHARACTER SET = 'latin1';
 USE paxdlistapp;
 
-CREATE TABLE IF NOT EXISTS settings
-(
+DROP TABLE settings;
+CREATE TABLE settings (
   dbversion CHAR (5)
 );
 
-CREATE TABLE IF NOT EXISTS users
+DROP TABLE user;
+CREATE TABLE user
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  email VARCHAR (255),
-  name VARCHAR (255),
+  user_id int unsigned NOT NULL AUTO_INCREMENT,
+  email VARCHAR (255) character set latin1,
+  name VARCHAR (255) character set latin1,
   password BLOB,
-  affiliation VARCHAR (255),
+  affiliation VARCHAR (255) character set latin1,
   superuser boolean,
+  PRIMARY KEY (user_id)
 );
 
-CREATE TABLE IF NOT EXISTS application
+DROP TABLE application;
+CREATE TABLE application
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR (255),
-  comment VARCHAR (255)
+  application_id int unsigned NOT NULL AUTO_INCREMENT,
+  name VARCHAR (255) character set latin1,
+  comment VARCHAR (255 character set latin1),
+  PRIMARY KEY (application_id)
 );
 
-CREATE TABLE IF NOT EXISTS site
+DROP TABLE site;
+CREATE TABLE site
 (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  site VARCHAR (255),
-  comment VARCHAR (255),
-  appid INT FOREIGN KEY
+  site_id int unsigned NOT NULL AUTO_INCREMENT,
+  application_id int unsigned default 0,
+  site VARCHAR (255) character set latin1,
+  comment VARCHAR (255) character set latin1,
+  PRIMARY KEY (site_id)
 );

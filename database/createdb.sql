@@ -7,7 +7,7 @@ USE paxdlistapp;
 
 CREATE TABLE IF NOT EXISTS settings
 (
-  version CHAR (5)
+  dbversion CHAR (5)
 );
 
 CREATE TABLE IF NOT EXISTS users

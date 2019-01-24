@@ -1,5 +1,4 @@
 -- WARNING!: This script WILL DELETE and recreate all tables
--- insert into users (email, name, password, affiliation) values ('test@test.com', 'test testesen', AES_ENCRYPT('pass123', 'secret'), ..)
 
 CREATE DATABASE IF NOT EXISTS paxdlistapp
 CHARACTER SET = 'latin1';

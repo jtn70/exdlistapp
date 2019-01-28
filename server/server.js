@@ -13,7 +13,6 @@ var dbcon = mysql.createConnection({
 });
 
 app.get('/eksamenEDL.txt', function(req, res){
-  dbcon.connect();
   dbcon.query('SELECT site FROM site;', function (err, result, fields) {
     if (err) throw err;
     var output = "";
@@ -22,7 +21,6 @@ app.get('/eksamenEDL.txt', function(req, res){
     }
     res.set('Content-Type', 'text/plain');
     res.send(output);
-    dbcon.end()
   });
 });
 

@@ -1,8 +1,8 @@
 -- WARNING!: This script WILL DELETE and recreate all tables
 
-CREATE DATABASE IF NOT EXISTS paxdlistapp
+CREATE DATABASE IF NOT EXISTS exdlistapp
 CHARACTER SET = 'latin1';
-USE paxdlistapp;
+USE exdlistapp;
 
 DROP TABLE IF EXISTS settings;
 CREATE TABLE settings (
@@ -39,3 +39,8 @@ CREATE TABLE site
   comment VARCHAR (255) character set latin1,
   PRIMARY KEY (site_id)
 );
+
+GRANT SELECT ON exdlistapp.* TO 'exdlist' IDENTIFIED BY 'changemepassword';
+GRANT ALL PRIVILEGES ON exdlistapp.* TO 'exdlistapp' IDENTIFIED BY 'changemepassword';
+FLUSH PRIVILEGES;
+

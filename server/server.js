@@ -13,12 +13,17 @@ var dbcon = mysql.createConnection({
 });
 
 app.get('/eksamenEDL.txt', function(req, res){
-  dbcon.connnect();
-  dbcon.query('SELECT exdlistapp.site FROM site;', function (err, rows, fields) {
+  dbcon.connect();
+  dbcon.query('SELECT site FROM site;', function (err, result, fields) {
     if (err) throw err;
-    res.send(rows)
+    var output = "";
+    for (var counter in result) {
+      output += result.site[counter];
+    }
+    res.set('Content-Type', 'text/plain');
+    res.send(output);
     dbcon.end()
-  })
+  });
 });
 
 app.get('/', function(req, res){
